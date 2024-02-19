@@ -1,0 +1,90 @@
+Go Çalımları
+
+Oğuzhan Yılmaz
+Gopher
+@c1982
+
+* About me
+
+- Developer > Sysop > Developer
+- MaestroPanel - Web Hosting Control Panel 
+- Bloket - Deep Packet Inspector
+- Masomo - HeadBall2, Basketball Arena
+- Mage Games - ...
+
+* custom iota
+
+.play -edit ./src/custom_iota/main.go
+
+* bitmask iota
+
+.play -edit ./src/bitmask_iota/main.go /^type States/,/// END OMIT/
+
+* thread safe map
+
+.play -edit ./src/thread_safe_map/main.go /^func main/,/^}/
+
+* embed
+
+.code ./src/embed_bad/main.go /^var data/,/^}/
+
+.code ./src/embed_good/main.go
+
+* empty struct
+
+.code -edit ./src/empty_struct/main.go
+
+* keyed fields
+
+.play -edit ./src/unkeyed_literals/main.go
+
+* non-comparable struct
+
+.play -edit ./src/non_comparable_struct/main.go
+
+* field alignment
+
+.play -edit ./src/field_alignment/main.go /^type Character/,/END OMIT/
+
+* interface embedding
+
+.play -edit ./src/interface_embedding/main.go
+
+* anonymous interface
+
+.play -edit ./src/anonymous_interface/main.go
+
+* auto-check interface
+
+.play -edit ./src/auto_check_interface/main.go
+
+* two-stage defer
+
+.play -edit ./src/two_stage_defer/main.go
+
+* build arguments
+
+.code ./src/build_arguments/args.sh
+
+.code ./src/build_arguments/main.go
+
+* GODEBUG=gctrace=1 go run .
+
+.code ./src/go_debug/gctrace.sh
+
+* GODEBUG=inittrace=1 go run .
+
+.code ./src/go_debug/inittrace.sh
+
+* GOMEMLIMIT
+
+.code ./src/go_memlimit/memlimit.sh
+
+.link https://github.com/golang/proposal/blob/master/design/48409-soft-memory-limit.md Soft memory limit
+.link https://github.com/golang/proposal/blob/master/design/48409-soft-memory-limit.md#death-spirals death-spirals
+
+* private repo
+
+.code ./src/private_repo/go_private.sh
+
+.code ./src/private_repo/main.go

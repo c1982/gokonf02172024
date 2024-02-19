@@ -1,0 +1,1 @@
+GOPRIVATE=*.gokonf.com

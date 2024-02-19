@@ -1,0 +1,1 @@
+go build -ldflags "-X main.version=1.0.0 -X main.buildTime=202402171520" .

@@ -1,0 +1,1 @@
+GODEBUG=memprofilerate=2048 go run .
